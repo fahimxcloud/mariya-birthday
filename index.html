@@ -5,147 +5,95 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Happy Birthday Mariya Binty 💙</title>
 
-<style>
+<link rel="stylesheet" href="style.css">
 
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial,sans-serif;
-}
-
-body{
-
-background:linear-gradient(135deg,#0b1e5b,#3f8cff);
-
-height:100vh;
-
-display:flex;
-
-justify-content:center;
-
-align-items:center;
-
-overflow:hidden;
-
-color:white;
-
-}
-
-.container{
-
-text-align:center;
-
-animation:fade 2s;
-
-}
-
-h1{
-
-font-size:45px;
-
-text-shadow:0 0 20px cyan;
-
-margin-bottom:20px;
-
-}
-
-h2{
-
-font-size:22px;
-
-margin-bottom:15px;
-
-}
-
-p{
-
-font-size:18px;
-
-margin-bottom:35px;
-
-}
-
-button{
-
-padding:18px 45px;
-
-font-size:22px;
-
-border:none;
-
-border-radius:50px;
-
-background:#00a2ff;
-
-color:white;
-
-cursor:pointer;
-
-box-shadow:0 0 25px cyan;
-
-transition:.3s;
-
-}
-
-button:hover{
-
-transform:scale(1.08);
-
-}
-
-@keyframes fade{
-
-from{
-
-opacity:0;
-
-transform:translateY(40px);
-
-}
-
-to{
-
-opacity:1;
-
-transform:translateY(0);
-
-}
-
-}
-
-</style>
-
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-<div class="container">
+<div id="welcome">
 
-<h1>🎉 Happy Birthday 🎉</h1>
+    <div class="glass">
 
-<h2>MARIYA BINTY 💙</h2>
+        <h1>🎉 Happy Birthday 🎉</h1>
 
-<p>A Special Surprise is waiting for you...</p>
+        <h2>MARIYA BINTY</h2>
 
-<button onclick="openGift()">
+        <p>
+        A Special Surprise Is Waiting For You 💙
+        </p>
 
-🎁 Open Your Gift
+        <button id="openBtn">
+            🎁 Open Your Gift
+        </button>
 
-</button>
+    </div>
 
 </div>
 
-<script>
+<div id="main" style="display:none;">
 
-function openGift(){
+<header>
 
-alert("Happy Birthday Mariya Binty 💙\n\nFrom FAHIM");
+<h1>Happy Birthday Mariya 💙</h1>
 
-}
+<p>
+Wishing you happiness, success and endless smiles.
+</p>
 
-</script>
+</header>
+
+<section id="gallery">
+
+<h2>📸 Beautiful Memories</h2>
+
+<img id="photo" src="photos/photo1.jpg" alt="Photo">
+
+</section>
+
+<section id="message">
+
+<h2>💌 A Letter For You</h2>
+
+<p>
+
+Happy Birthday, Mariya.
+
+May Allah bless you with good health, happiness,
+success and countless beautiful moments.
+
+Keep smiling.
+
+Never stop believing in yourself.
+
+Enjoy your special day.
+
+— FAHIM 💙
+
+</p>
+
+</section>
+
+<section id="cake">
+
+<h2>🎂 Make A Wish</h2>
+
+<div class="cake">
+🎂
+</div>
+
+</section>
+
+<footer>
+
+Made With ❤️ By FAHIM
+
+</footer>
+
+</div>
+
+<script src="script.js"></script>
 
 </body>
-
-  </html>
+</html>
