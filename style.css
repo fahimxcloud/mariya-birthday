@@ -164,3 +164,28 @@ text-shadow:
 transition:1s;
 
     }
+/* ===== Gift Box ===== */
+
+.gift-box{
+font-size:90px;
+cursor:pointer;
+animation:giftBounce 1.8s infinite;
+transition:.3s;
+user-select:none;
+}
+
+.gift-box:hover{
+transform:scale(1.15) rotate(5deg);
+}
+
+@keyframes giftBounce{
+
+0%,100%{
+transform:translateY(0);
+}
+
+50%{
+transform:translateY(-15px);
+}
+
+}
