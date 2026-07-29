@@ -189,3 +189,40 @@ transform:translateY(-15px);
 }
 
 }
+/* ===== Fade Animation ===== */
+
+#main{
+animation:fadeIn 1.2s ease;
+}
+
+@keyframes fadeIn{
+
+from{
+opacity:0;
+transform:translateY(30px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+#photo{
+animation:photoGlow 3s infinite alternate;
+}
+
+@keyframes photoGlow{
+
+from{
+box-shadow:0 0 15px #29b6f6;
+}
+
+to{
+box-shadow:
+0 0 35px cyan,
+0 0 60px #64b5f6;
+}
+
+}
