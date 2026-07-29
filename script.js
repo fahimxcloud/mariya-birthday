@@ -16,8 +16,17 @@ let current = 0;
 const img = document.getElementById("photo");
 
 openBtn.addEventListener("click", () => {
-    welcome.style.display = "none";
-    main.style.display = "block";
+
+    openBtn.style.transform="scale(1.4) rotate(20deg)";
+    openBtn.style.opacity="0";
+
+    setTimeout(()=>{
+
+        welcome.style.display="none";
+        main.style.display="block";
+
+    },800);
+
 });
 
 setInterval(() => {
