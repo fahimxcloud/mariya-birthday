@@ -95,3 +95,72 @@ footer{
     margin-bottom:50px;
     color:#b3e5fc;
 }
+/* ===== Animated Background ===== */
+
+body::before{
+content:"";
+position:fixed;
+left:0;
+top:0;
+width:100%;
+height:100%;
+background-image:
+radial-gradient(white 1px,transparent 1px),
+radial-gradient(#7ec8ff 1px,transparent 1px);
+
+background-size:80px 80px,120px 120px;
+
+opacity:.35;
+
+animation:starsMove 80s linear infinite;
+
+pointer-events:none;
+
+z-index:-2;
+}
+
+@keyframes starsMove{
+
+from{
+
+transform:translateY(0);
+
+}
+
+to{
+
+transform:translateY(-500px);
+
+}
+
+}
+
+.title{
+
+animation:glow 2s infinite alternate;
+
+}
+
+@keyframes glow{
+
+from{
+
+text-shadow:0 0 10px #6ec6ff;
+
+}
+
+to{
+
+text-shadow:
+0 0 20px cyan,
+0 0 35px #2196f3;
+
+}
+
+}
+
+#photo{
+
+transition:1s;
+
+    }
