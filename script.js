@@ -3,13 +3,13 @@ const welcome = document.getElementById("welcome");
 const main = document.getElementById("main");
 
 const photos = [
-    "photos/photo1.jpg",
-    "photos/photo2.jpg",
-    "photos/photo3.jpg",
-    "photos/photo4.jpg",
-    "photos/photo5.jpg",
-    "photos/photo6.jpg",
-    "photos/photo7.jpg"
+"photos/Screenshot_20260728-192610_1.png",
+"photos/Screenshot_20260728-192642_1.png",
+"photos/Screenshot_20260728-192723_1.png",
+"photos/Screenshot_20260728-192849_1.png",
+"photos/Screenshot_20260729-182259.png",
+"photos/Screenshot_20260729-183550_2.png",
+"photos/Screenshot_20260729-183603_1.png"
 ];
 
 let current = 0;
@@ -21,7 +21,6 @@ openBtn.addEventListener("click", () => {
 });
 
 setInterval(() => {
-    if (!img) return;
     current = (current + 1) % photos.length;
     img.src = photos[current];
 }, 3000);
