@@ -366,3 +366,24 @@ opacity:0;
 }
 
 }
+#wishBtn{
+
+margin-top:20px;
+
+}
+
+#wishMessage{
+
+margin-top:25px;
+
+font-size:20px;
+
+color:#fff;
+
+opacity:0;
+
+transition:1s;
+
+line-height:1.8;
+
+}
