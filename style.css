@@ -63,6 +63,8 @@ button:hover{
 header,
 section,
 footer{
+
+backdrop-filter:blur(12px);
     width:90%;
     max-width:900px;
     margin:30px auto;
