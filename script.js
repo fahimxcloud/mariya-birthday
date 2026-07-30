@@ -33,3 +33,18 @@ setInterval(() => {
     current = (current + 1) % photos.length;
     img.src = photos[current];
 }, 3000);
+const wishBtn = document.getElementById("wishBtn");
+const wishMessage = document.getElementById("wishMessage");
+
+if(wishBtn){
+
+wishBtn.onclick = () =>{
+
+wishMessage.innerHTML =
+"💙 May Allah bless you with endless happiness, success, good health, and beautiful moments. Happy Birthday Mariya! 🎉";
+
+wishMessage.style.opacity="1";
+
+};
+
+}
