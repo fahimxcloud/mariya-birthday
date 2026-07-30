@@ -284,3 +284,40 @@ transform:translateY(0);
 transform:translateY(-130vh);
 }
 }
+/* ===== Fireworks ===== */
+
+#fireworks{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+pointer-events:none;
+overflow:hidden;
+z-index:-2;
+}
+
+.firework{
+position:absolute;
+width:8px;
+height:8px;
+border-radius:50%;
+background:#ffffff;
+box-shadow:
+0 0 15px #fff,
+0 0 30px #29b6f6,
+0 0 45px #64b5f6;
+animation:explode 1.5s ease-out forwards;
+}
+
+@keyframes explode{
+0%{
+transform:scale(0);
+opacity:1;
+}
+
+100%{
+transform:scale(20);
+opacity:0;
+}
+}
