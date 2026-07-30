@@ -7,7 +7,7 @@
 }
 
 body{
-    background:linear-gradient(135deg,#001b4d,#0d47a1,#1976d2);
+    background:radial-gradient(circle at top,#3b82f6 0%,#102a66 35%,#050b24 70%,#01040f 100%);
     color:white;
     overflow-x:hidden;
 }
