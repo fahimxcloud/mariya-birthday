@@ -90,3 +90,22 @@ setTimeout(typeLetter,45);
 setTimeout(typeLetter,1000);
 
 }
+const intro = document.getElementById("intro");
+
+if(intro){
+
+intro.onclick = ()=>{
+
+intro.style.opacity="0";
+
+setTimeout(()=>{
+
+intro.style.display="none";
+
+document.getElementById("welcome").style.display="flex";
+
+},900);
+
+};
+
+}
