@@ -48,3 +48,45 @@ wishMessage.style.opacity="1";
 };
 
 }
+const letter =
+`Happy Birthday, Mariya Binty 💙
+
+May Allah bless you with endless happiness,
+good health,
+success,
+peace,
+and beautiful memories.
+
+Keep smiling,
+keep believing in yourself,
+and never stop chasing your dreams.
+
+Thank you for being such a wonderful friend.
+
+I hope today becomes one of the happiest days of your life.
+
+✨ A little surprise from FAHIM 💙`;
+
+const typing = document.getElementById("typing");
+
+if(typing){
+
+let i = 0;
+
+function typeLetter(){
+
+if(i < letter.length){
+
+typing.innerHTML += letter.charAt(i);
+
+i++;
+
+setTimeout(typeLetter,45);
+
+}
+
+}
+
+setTimeout(typeLetter,1000);
+
+}
