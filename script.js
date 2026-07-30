@@ -17,8 +17,9 @@ const img = document.getElementById("photo");
 
 openBtn.addEventListener("click", () => {
 
-    openBtn.style.transform="scale(1.4) rotate(20deg)";
-    openBtn.style.opacity="0";
+    openBtn.style.transform="scale(2) rotate(25deg)";
+openBtn.style.opacity="0";
+openBtn.style.filter="drop-shadow(0 0 80px cyan)";
 
     setTimeout(()=>{
 
