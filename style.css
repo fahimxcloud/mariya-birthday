@@ -87,20 +87,25 @@ backdrop-filter:blur(12px);
     text-align:center;
 }
 
-#photo{
-    width:100%;
-    max-width:380px;
-    border-radius:22px;
-    border:5px solid rgba(255,255,255,.4);
-    box-shadow:
-        0 0 20px rgba(33,150,243,.5),
-        0 0 40px rgba(33,150,243,.3);
-    transition:all .8s ease;
-}
-
-#photo:hover{
-    transform:scale(1.03);
-}
+photo{
+‎width:100%;
+‎max-width:380px;
+‎border-radius:22px;
+‎border:5px solid rgba(255,255,255,.4);
+‎box-shadow:
+‎0 0 20px rgba(33,150,243,.5),
+‎0 0 40px rgba(33,150,243,.3);
+‎transition:all .8s ease;
+‎}
+‎
+‎#photo:hover{
+‎transform:scale(1.03);
+‎}
+‎.cake{
+‎font-size:90px;
+‎animation:bounce 2s infinite;
+‎}
+‎
 
 @keyframes bounce{
     50%{
