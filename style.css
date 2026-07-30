@@ -175,19 +175,20 @@ transition:1s;
 /* ===== Gift Box ===== */
 
 .gift-box{
-font-size:90px;
+font-size:100px;
 cursor:pointer;
-animation:giftBounce 1.8s infinite;
-transition:.3s;
 user-select:none;
+animation:giftFloat 2.5s ease-in-out infinite;
+transition:all .5s ease;
+filter:drop-shadow(0 0 20px #42a5f5);
 }
 
 .gift-box:hover{
-transform:scale(1.15) rotate(5deg);
+transform:scale(1.15) rotate(8deg);
+filter:drop-shadow(0 0 35px #90caf9);
 }
 
-@keyframes giftBounce{
-
+@keyframes giftFloat{
 0%,100%{
 transform:translateY(0);
 }
