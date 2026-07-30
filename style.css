@@ -357,3 +357,10 @@ transition:1s;
 line-height:1.8;
 
 }
+#typing{
+white-space:pre-line;
+font-size:18px;
+line-height:1.9;
+min-height:260px;
+text-align:left;
+}
