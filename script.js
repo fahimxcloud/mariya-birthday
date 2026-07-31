@@ -31,18 +31,7 @@ openBtn.addEventListener("click", () => {
 
 });
 
-    openBtn.style.transform="scale(2) rotate(25deg)";
-openBtn.style.opacity="0";
-openBtn.style.filter="drop-shadow(0 0 80px cyan)";
-
-    setTimeout(()=>{
-
-        welcome.style.display="none";
-        main.style.display="block";
-
-    },800);
-
-});
+    
 
 setInterval(() => {
     current = (current + 1) % photos.length;
